@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Happy Birthday Wafaa ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  font-family:Poppins,sans-serif;
+  background:
+    radial-gradient(circle at 20% 20%,#ffdce8 0 2px,transparent 3px),
+    radial-gradient(circle at 80% 70%,#ffc8d9 0 2px,transparent 3px),
+    #fff3f7;
+  background-size:35px 35px;
+  color:#6b4b57;
+  overflow-x:hidden;
+}
+
+/* floating hearts */
+
+.heart{
+  position:fixed;
+  bottom:-30px;
+  font-size:20px;
+  opacity:.6;
+  animation:floatHeart linear forwards;
+  pointer-events:none;
+  z-index:0;
+}
+
+@keyframes floatHeart{
+  to{
+    transform:translateY(-110vh) rotate(360deg);
+    opacity:0;
+  }
+}
+
+/* controls */
+
+.controls{
+  position:fixed;
+  top:15px;
+  left:15px;
+  right:15px;
+  display:flex;
+  justify-content:space-between;
+  z-index:100;
+}
+
+.circle-btn{
+  width:44px;
+  height:44px;
+  border:1px solid #f2ccd8;
+  background:#fff;
+  border-radius:50%;
+  box-shadow:0 5px 20px #d987a522;
+  cursor:pointer;
+  font-size:18px;
+  transition:.2s;
+}
+
+.circle-btn:hover{
+  transform:scale(1.1);
+}
+
+/* pages */
+
+.page{
+  min-height:100vh;
+  width:100%;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+  padding:80px 20px 40px;
+  position:relative;
+  z-index:2;
+}
+
+.page.active{
+  display:flex;
+  animation:pageIn .6s ease;
+}
+
+@keyframes pageIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* text */
+
+.script{
+  font-family:"Great Vibes",cursive;
+  color:#d82b5b;
+}
+
+.title{
+  font-size:52px;
+  line-height:1;
+}
+
+.name{
+  font-size:70px;
+  line-height:1;
+  margin-top:5px;
+}
+
+.subtitle{
+  font-family:"Great Vibes",cursive;
+  font-size:24px;
+  color:#e47796;
+}
+
+.small{
+  max-width:390px;
+  font-size:14px;
+  line-height:1.7;
+  margin:10px auto;
+}
+
+/* music */
+
+.music{
+  background:#fff;
+  border:1px solid #f4d6df;
+  padding:8px 12px;
+  border-radius:30px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  box-shadow:0 5px 20px #d987a522;
+  margin-bottom:20px;
+  font-size:12px;
+}
+
+.play{
+  border:0;
+  background:#e92f63;
+  color:white;
+  padding:7px 15px;
+  border-radius:20px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/* cake */
+
+.cake-area{
+  margin:25px 0;
+  position:relative;
+  width:270px;
+  height:220px;
+}
+
+.cake{
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  width:230px;
+  height:115px;
+  background:linear-gradient(#ffb6c9,#f17b9e);
+  border-radius:20px 20px 15px 15px;
+  box-shadow:0 15px 30px #b94b702d;
+}
+
+.cake:before{
+  content:"";
+  position:absolute;
+  top:-35px;
+  left:0;
+  width:230px;
+  height:55px;
+  background:#fff0f5;
+  border-radius:50%;
+  box-shadow:inset 0 -8px #ffc1d2;
+}
+
+.cake:after{
+  content:"";
+  position:absolute;
+  top:5px;
+  left:25px;
+  width:180px;
+  height:25px;
+  border-radius:50%;
+  background:#fff;
+  opacity:.7;
+}
+
+.cake-text{
+  position:absolute;
+  z-index:3;
+  top:65px;
+  left:0;
+  width:100%;
+  font-family:"Great Vibes",cursive;
+  font-size:32px;
+  color:#fff;
+  text-shadow:0 2px 4px #a62f54;
+}
+
+.candle{
+  position:absolute;
+  z-index:5;
+  bottom:128px;
+  width:10px;
+  height:48px;
+  background:linear-gradient(90deg,#fff,#ff9ab5,#fff);
+  border-radius:5px;
+}
+
+.candle:after{
+  content:"";
+  position:absolute;
+  top:-18px;
+  left:1px;
+  width:8px;
+  height:15px;
+  background:#ffb000;
+  border-radius:50% 50% 50% 50%;
+  box-shadow:0 0 12px #ffb000;
+  animation:flicker .5s infinite alternate;
+}
+
+.c1{left:75px}
+.c2{left:105px}
+.c3{left:135px}
+.c4{left:165px}
+
+@keyframes flicker{
+  from{transform:scale(.8)}
+  to{transform:scale(1.15)}
+}
+
+/* buttons */
+
+.btn{
+  border:0;
+  padding:13px 40px;
+  border-radius:30px;
+  background:#ed3264;
+  color:white;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 8px 20px #ed326455;
+  transition:.2s;
+  margin-top:15px;
+}
+
+.btn:hover{
+  transform:translateY(-3px) scale(1.02);
+}
+
+.btn-white{
+  background:white;
+  color:#ed3264;
+  border:1px solid #f5c6d5;
+  box-shadow:0 5px 15px #c96b8322;
+}
+
+/* no button */
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  position:relative;
+  width:100%;
+  min-height:55px;
+}
+
+.no{
+  position:relative;
+  transition:.15s;
+}
+
+/* balloons */
+
+.balloon-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px 35px;
+  margin:25px 0;
+}
+
+.balloon-slot{
+  width:90px;
+  height:130px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.balloon{
+  width:70px;
+  height:88px;
+  border-radius:50% 50% 48% 48%;
+  position:relative;
+  cursor:pointer;
+  box-shadow:
+    inset -10px -10px 15px #00000018,
+    inset 8px 8px 15px #ffffff77;
+  transition:.2s;
+}
+
+.balloon:hover{
+  transform:scale(1.12);
+}
+
+.balloon:after{
+  content:"";
+  position:absolute;
+  bottom:-35px;
+  left:50%;
+  height:38px;
+  width:1px;
+  background:#8888;
+}
+
+.blue{background:#91d5f0}
+.pink{background:#ff9fba}
+.green{background:#a9dfbd}
+.purple{background:#c6adff}
+
+.word{
+  font-family:"Great Vibes",cursive;
+  font-size:30px;
+  color:#e62d60;
+  animation:pop .4s ease;
+}
+
+@keyframes pop{
+  0%{transform:scale(0)}
+  80%{transform:scale(1.2)}
+  100%{transform:scale(1)}
+}
+
+/* wish */
+
+.wish{
+  width:290px;
+  min-height:150px;
+  background:#fff;
+  border-radius:25px;
+  padding:25px;
+  box-shadow:0 12px 35px #d66a8c22;
+  margin:20px 0;
+}
+
+.wish-icon{
+  font-size:55px;
+  animation:pulse 1.2s infinite;
+}
+
+@keyframes pulse{
+  50%{transform:scale(1.15)}
+}
+
+/* reasons */
+
+.reasons{
+  display:flex;
+  gap:12px;
+  margin:20px 0;
+}
+
+.reason{
+  width:55px;
+  height:55px;
+  background:#fff;
+  border-radius:50%;
+  border:1px solid #f2d1dc;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+  cursor:pointer;
+  box-shadow:0 5px 15px #b85a7622;
+  transition:.2s;
+}
+
+.reason:hover{
+  transform:translateY(-5px);
+}
+
+.message{
+  background:#fff0f4;
+  border-radius:18px;
+  padding:13px 18px;
+  max-width:360px;
+  min-height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#d82b5b;
+  font-size:13px;
+}
+
+/* flowers */
+
+.flowers{
+  font-size:55px;
+  margin:15px;
+  animation:sway 2s infinite ease-in-out;
+}
+
+@keyframes sway{
+  50%{transform:rotate(5deg) scale(1.05)}
+}
+
+/* final */
+
+.final-heart{
+  font-size:90px;
+  animation:heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.2)}
+}
+
+.confetti{
+  position:fixed;
+  top:-20px;
+  width:8px;
+  height:14px;
+  z-index:200;
+  animation:fall 3s linear forwards;
+}
+
+@keyframes fall{
+  to{
+    transform:translateY(110vh) rotate(720deg);
+  }
+}
+
+@media(max-width:500px){
+
+  .title{
+    font-size:42px;
+  }
+
+  .name{
+    font-size:58px;
+  }
+
+  .subtitle{
+    font-size:21px;
+  }
+
+  .cake-area{
+    transform:scale(.9);
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- CONTROLS -->
+
+<div class="controls">
+
+  <button
+    class="circle-btn"
+    id="back"
+    onclick="prevPage()"
+    style="visibility:hidden">
+    ←
+  </button>
+
+  <button
+    class="circle-btn"
+    onclick="toggleMusic()">
+    🔊
+  </button>
+
+</div>
+
+
+<!-- PAGE 1 -->
+
+<section class="page active" id="page1">
+
+  <div class="music">
+    🎵 <span>Without Me — Halsey</span>
+
+    <button
+      class="play"
+      onclick="openMusic()">
+      PLAY
+    </button>
+  </div>
+
+  <h1 class="script title">
+    Happy Birthday,
+  </h1>
+
+  <h2 class="script name">
+    Wafaa ❤️
+  </h2>
+
+  <p class="subtitle">
+    A little surprise made just for you...
+  </p>
+
+
+  <div class="cake-area">
+
+    <div class="candle c1"></div>
+    <div class="candle c2"></div>
+    <div class="candle c3"></div>
+    <div class="candle c4"></div>
+
+    <div class="cake">
+
+      <div class="cake-text">
+        Wafaa
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <p class="small">
+    Today is your special day.
+    You are officially <b>19</b> 🎂✨
+    So let's make this little journey special.
+  </p>
+
+
+  <div class="buttons">
+
+    <button
+      class="btn"
+      onclick="nextPage()">
+      Yes ❤️
+    </button>
+
+    <button
+      class="btn btn-white no"
+      id="no"
+      onmouseenter="runAway()"
+      onclick="runAway()">
+      No
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- PAGE 2 -->
+
+<section class="page" id="page2">
+
+  <h1 class="script title">
+    A little game 🎈
+  </h1>
+
+  <p class="subtitle">
+    Pop every balloon for Wafaa
+  </p>
+
+  <p class="small">
+    Each balloon hides a little piece
+    of the message...
+  </p>
+
+
+  <div class="balloon-box">
+
+    <div class="balloon-slot">
+      <div
+        class="balloon blue"
+        onclick="pop(this,'Wafaa')">
+      </div>
+    </div>
+
+    <div class="balloon-slot">
+      <div
+        class="balloon pink"
+        onclick="pop(this,'you')">
+      </div>
+    </div>
+
+    <div class="balloon-slot">
+      <div
+        class="balloon green"
+        onclick="pop(this,'make')">
+      </div>
+    </div>
+
+    <div class="balloon-slot">
+      <div
+        class="balloon purple"
+        onclick="pop(this,'me smile ❤️')">
+      </div>
+    </div>
+
+  </div>
+
+
+  <button
+    class="btn"
+    id="continue2"
+    style="display:none"
+    onclick="nextPage()">
+    Continue 💕
+  </button>
+
+</section>
+
+
+<!-- PAGE 3 -->
+
+<section class="page" id="page3">
+
+  <h1 class="script title">
+    Make a wish ✨
+  </h1>
+
+  <p class="subtitle">
+    You're 19 now, Wafaa 💕
+  </p>
+
+
+  <div class="wish">
+
+    <div class="wish-icon">
+      🎂
+    </div>
+
+    <h2 style="color:#d82b5b;margin:8px;">
+      19
+    </h2>
+
+    <p style="font-size:13px;">
+      Close your eyes for a moment,
+      make your sweetest wish,
+      and keep it in your heart.
+    </p>
+
+  </div>
+
+
+  <div class="flowers">
+    🌷🌸🌷
+  </div>
+
+
+  <button
+    class="btn"
+    onclick="nextPage()">
+    My message 💌
+  </button>
+
+</section>
+
+
+<!-- PAGE 4 -->
+
+<section class="page" id="page4">
+
+  <h1
+    class="script"
+    style="font-size:44px">
+    For Wafaa 🌷
+  </h1>
+
+  <p class="subtitle">
+    Four little reasons...
+  </p>
+
+
+  <div class="reasons">
+
+    <div
+      class="reason"
+      onclick="message('❤️ Your kindness is something truly special.')">
+      ❤️
+    </div>
+
+    <div
+      class="reason"
+      onclick="message('✨ Your smile can make an ordinary moment beautiful.')">
+      ✨
+    </div>
+
+    <div
+      class="reason"
+      onclick="message('😊 Your laughter brings happiness everywhere.')">
+      😊
+    </div>
+
+    <div
+      class="reason"
+      onclick="message('🌷 You deserve all the beautiful things in life.')">
+      🌷
+    </div>
+
+  </div>
+
+
+  <div
+    class="message"
+    id="message">
+    Tap the hearts to discover the messages 💕
+  </div>
+
+
+  <div class="flowers">
+    💐🌸💐
+  </div>
+
+
+  <button
+    class="btn"
+    onclick="finish()">
+    Finish 🎉
+  </button>
+
+</section>
+
+
+<!-- PAGE 5 -->
+
+<section class="page" id="page5">
+
+  <div class="final-heart">
+    ❤️
+  </div>
+
+  <h1
+    class="script"
+    style="font-size:55px">
+    Happy Birthday
+  </h1>
+
+  <h2
+    class="script"
+    style="font-size:65px;color:#e92f63">
+    Wafaa
+  </h2>
+
+  <p class="subtitle">
+    19 years of beautiful memories ✨
+  </p>
+
+  <p class="small">
+    May this new year of your life bring you
+    happiness, beautiful moments,
+    and everything your heart wishes for. 🎂🌷
+  </p>
+
+  <div style="font-size:40px;margin-top:15px;">
+    🎂 🎈 🌷 ✨ 💕
+  </div>
+
+</section>
+
+
+<script>
+
+/* page system */
+
+let page = 1;
+const totalPages = 5;
+
+function updatePage(){
+
+  for(let i=1;i<=totalPages;i++){
+
+    document
+      .getElementById("page"+i)
+      .classList.remove("active");
+
+  }
+
+  document
+    .getElementById("page"+page)
+    .classList.add("active");
+
+  document.getElementById("back").style.visibility =
+    page > 1 ? "visible" : "hidden";
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+
+}
+
+
+function nextPage(){
+
+  if(page < totalPages){
+
+    page++;
+
+    updatePage();
+
+  }
+
+}
+
+
+function prevPage(){
+
+  if(page > 1){
+
+    page--;
+
+    updatePage();
+
+  }
+
+}
+
+
+/* NO BUTTON */
+
+function runAway(){
+
+  const button =
+    document.getElementById("no");
+
+  const x =
+    (Math.random()-.5)*220;
+
+  const y =
+    (Math.random()-.5)*130;
+
+  button.style.transform =
+    `translate(${x}px,${y}px)`;
+
+}
+
+
+/* BALLOONS */
+
+let popped = 0;
+
+function pop(element,text){
+
+  if(element.dataset.done) return;
+
+  element.dataset.done = "yes";
+
+  const parent =
+    element.parentElement;
+
+  parent.innerHTML =
+    `<span class="word">${text}</span>`;
+
+  popped++;
+
+  if(popped === 4){
+
+    document
+      .getElementById("continue2")
+      .style.display="block";
+
+  }
+
+}
+
+
+/* MESSAGES */
+
+function message(text){
+
+  document
+    .getElementById("message")
+    .innerText = text;
+
+}
+
+
+/* MUSIC */
+
+function openMusic(){
+
+  /*
+    المتصفح يسمح للمستخدم بفتح الأغنية
+    من زر PLAY.
+  */
+
+  window.open(
+    "https://www.youtube.com/results?search_query=Halsey+Without+Me+official",
+    "_blank"
+  );
+
+}
+
+
+function toggleMusic(){
+
+  openMusic();
+
+}
+
+
+/* FINAL */
+
+function finish(){
+
+  nextPage();
+
+  createConfetti();
+
+}
+
+
+/* CONFETTI */
+
+function createConfetti(){
+
+  const symbols =
+    ["💗","✨","🎉","💕","🌸","⭐"];
+
+  for(let i=0;i<45;i++){
+
+    const piece =
+      document.createElement("div");
+
+    piece.className="confetti";
+
+    piece.innerText =
+      symbols[
+        Math.floor(
+          Math.random()*symbols.length
+        )
+      ];
+
+    piece.style.left =
+      Math.random()*100+"vw";
+
+    piece.style.animationDelay =
+      Math.random()*1.5+"s";
+
+    piece.style.fontSize =
+      (12+Math.random()*15)+"px";
+
+    document.body.appendChild(piece);
+
+    setTimeout(()=>{
+      piece.remove();
+    },4500);
+
+  }
+
+}
+
+
+/* FLOATING HEARTS */
+
+function createHeart(){
+
+  const heart =
+    document.createElement("div");
+
+  heart.className="heart";
+
+  heart.innerText =
+    ["❤️","💕","💗","💖","🌸"][
+      Math.floor(Math.random()*5)
+    ];
+
+  heart.style.left =
+    Math.random()*100+"vw";
+
+  heart.style.animationDuration =
+    (5+Math.random()*5)+"s";
+
+  heart.style.fontSize =
+    (14+Math.random()*15)+"px";
+
+  document.body.appendChild(heart);
+
+  setTimeout(()=>{
+    heart.remove();
+  },10000);
+
+}
+
+setInterval(createHeart,900);
+
+</script>
+
+</body>
+  </html>
